@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "55728452604",
+    "project_id": "bankmanagement-6bf05",
+    "storage_bucket": "bankmanagement-6bf05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55728452604:android:385782672cf483b753b879",
+        "android_client_info": {
+          "package_name": "com.example.bankmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55728452604-if3a5rjq5obqhq49499ql1v31aodbpl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlzeSl1LAzjapiG5jcKCmkS4r6TUIDioM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55728452604-if3a5rjq5obqhq49499ql1v31aodbpl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

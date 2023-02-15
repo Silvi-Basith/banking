@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditCardActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border"
+        android:padding="15dp"
+        android:id="@+id/Rl_credit2">
+
+
+        <EditText
+            android:id="@+id/edttxt_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Card Number"
+            android:textSize="18sp"
+            android:inputType="number"/>
+
+
+        <View
+            android:id="@+id/divider_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/edttxt_card_number"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_gray" />
+
+
+        <EditText
+            android:id="@+id/edttxttvw_mmdy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_card_number"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:hint="MM/YY"
+            android:textSize="18sp"
+            android:inputType="date"/>
+
+        <EditText
+            android:id="@+id/edttxttvw_cvc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/edttxttvw_mmdy"
+            android:layout_below="@+id/divider_card_number"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:hint="     CVC / CVV"
+            android:layout_marginStart="100dp"
+            android:textSize="18sp"
+            android:inputType="number"/>
+
+
+        <View
+            android:id="@+id/divider_mmyy"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/edttxttvw_mmdy"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_gray" />
+
+
+        <EditText
+            android:id="@+id/edtxtvw_cardholdername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider_mmyy"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:hint="Card Holder Name"
+            android:textSize="18sp"
+            android:inputType="textPersonName"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_addmoney"
+        android:text="Add Money"
+        android:layout_below="@+id/Rl_credit2"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="100dp" />
+
+
+
+</RelativeLayout>

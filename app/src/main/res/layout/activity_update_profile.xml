@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_update_profile_head"
+        android:layout_marginTop="30dp"
+        android:text="You can update your profile details now"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/textview_update_profile_head"
+         android:id="@+id/Rl_updt1"
+         android:background="@drawable/border"
+         android:padding="15dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginTop="30dp"
+         android:layout_marginEnd="10dp"
+         android:layout_marginBottom="10dp">
+
+         <ImageView
+             android:id="@+id/imageViewPerson"
+             android:layout_width="35dp"
+             android:layout_height="35dp"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="5dp"
+             android:layout_marginRight="5dp"
+
+             android:src="@drawable/ic_profile">
+
+
+         </ImageView>
+
+         <View
+             android:id="@+id/divider_person"
+             android:layout_width="250dp"
+             android:layout_height="1dp"
+             android:layout_below="@+id/textview_update_profile_name"
+             android:layout_centerHorizontal="true"
+             android:layout_toEndOf="@+id/imageViewPerson"
+             android:background="@android:color/darker_gray">
+
+         </View>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/textview_update_profile_name"
+             android:text="Name"
+             android:padding="6dp"
+             android:textSize="16sp"
+             android:textColor="@color/black"
+            android:layout_toEndOf="@+id/imageViewPerson"/>
+
+
+
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/edittext_update_profile_name"
+             android:layout_below="@id/textview_update_profile_name"
+             android:background="@android:color/transparent"
+             android:inputType="textPersonName"
+             android:padding="6dp"
+             android:textSize="16sp"
+             android:hint="Enter full name"
+             android:layout_toEndOf="@+id/imageViewPerson"/>
+
+
+     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rl_updt1"
+        android:id="@+id/Rl_updt2"
+        android:background="@drawable/border"
+        android:padding="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imagview_dob"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+
+            android:src="@drawable/ic_birthday">
+
+
+        </ImageView>
+
+        <View
+            android:id="@+id/divider_birthday"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textview_update_dob"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@+id/imagview_dob"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_update_dob"
+            android:text="Date of Birth(dd/mm/yyyy)"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/imagview_dob"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_update_profile_DoB"
+            android:layout_below="@+id/textview_update_dob"
+            android:background="@android:color/transparent"
+            android:inputType="date"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:hint="Select your date of birth"
+            android:layout_toEndOf="@+id/imagview_dob"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rl_updt2"
+        android:id="@+id/Rl_updt3"
+        android:background="@drawable/border"
+        android:padding="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/imagview_gender"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+
+            android:src="@drawable/ic_gender">
+
+
+        </ImageView>
+
+        <View
+            android:id="@+id/divider_gender"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textview_update_gender"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@+id/imagview_gender"
+            android:background="@android:color/darker_gray"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_update_gender"
+            android:text="Gender"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/imagview_gender"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radiogroup_update_gender"
+            android:layout_below="@id/textview_update_gender"
+            android:background="@android:color/transparent"
+            android:layout_toEndOf="@+id/imagview_gender">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_male"
+                android:text="Male"
+                android:textSize="16sp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_female"
+                android:layout_marginLeft="10dp"
+                android:text="female"
+                android:textSize="16sp"/>
+
+
+        </RadioGroup>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rl_updt3"
+        android:id="@+id/Rl_updt4"
+        android:background="@drawable/border"
+        android:padding="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:id="@+id/imagview_mobile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_mobile">
+
+
+        </ImageView>
+
+        <View
+            android:id="@+id/divider_mobile"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textview_update_mobile"
+            android:layout_centerHorizontal="true"
+            android:layout_toEndOf="@+id/imagview_mobile"
+            android:background="@android:color/darker_gray"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_update_mobile"
+            android:text="Mobile"
+
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/imagview_mobile"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_update_profile_mobile"
+            android:layout_below="@+id/textview_update_mobile"
+            android:background="@android:color/transparent"
+            android:inputType="phone"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:hint="Phone number"
+            android:layout_toEndOf="@+id/imagview_mobile"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_update"
+            android:text="Update Profile"
+            android:layout_below="@+id/Rl_updt4"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+
+
+
+
+
+
+</RelativeLayout>
+
+
+</ScrollView>

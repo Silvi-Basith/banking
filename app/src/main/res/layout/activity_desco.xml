@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/textView_desco_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="DESCO"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <RelativeLayout
+            android:id="@+id/rl_login2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_desco_head"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:padding="15dp">
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textview_desco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="6dp"
+                android:text="Enter Account Number "
+                android:textColor="@color/black" />
+
+
+            <View
+                android:id="@+id/divider_email"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textview_desco"
+                android:layout_centerHorizontal="true"
+
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+
+            <EditText
+                android:id="@+id/editText_desco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_desco"
+                android:layout_marginTop="10dp"
+
+                android:background="@android:color/transparent"
+                android:hint="Enter Account Number"
+                android:inputType="textPersonName"
+
+                android:padding="6dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_login3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_login2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_desco1"
+                android:text="Enter Contact Number"
+                android:textColor="@color/black"
+
+                android:padding="6dp"
+              />
+
+
+
+
+
+            <View
+                android:id="@+id/divide_pass"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textview_desco1"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <EditText
+                android:id="@+id/editText_desco1"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_desco1"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter Contact Number"
+                android:inputType="number"
+
+                android:padding="6dp"
+               />
+
+
+        </RelativeLayout>
+
+
+
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_desco"
+            android:text="Confirm"
+            android:layout_below="@+id/rl_login3"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

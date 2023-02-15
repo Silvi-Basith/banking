@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:background="@drawable/border"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/textview_ad_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Select your Withdraw Method"
+        android:textSize="18sp" />
+
+
+    <View
+        android:id="@+id/divider_ad"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textview_ad_head"
+        android:layout_marginTop="20dp"
+        android:background="@color/light_gray" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider_ad"
+        android:padding="7dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/ic_card"
+            android:layout_width="45dp"
+            android:layout_height="52dp"
+            android:background="@drawable/ic_bkash"
+            android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/textview_bkash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_alignStart="@+id/ic_card"
+            android:text="Bkash"
+            android:textSize="18sp"
+            android:padding="15dp"
+
+            android:background="@android:color/transparent"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

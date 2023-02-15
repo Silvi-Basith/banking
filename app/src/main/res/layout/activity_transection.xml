@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/ic_desco"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_desco"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textview_desco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/ic_desco"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:text="DESCO"
+            android:textColor="#1F0251"
+            android:textSize="18sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/textview_desco"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_gray"
+            android:id="@+id/divider_desco"/>
+
+
+
+        <ImageView
+            android:id="@+id/ic_titas"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/divider_desco"
+            android:background="@drawable/ic_titas"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/txtvw_titas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/ic_titas"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"
+            android:hint="TITAS"
+            android:layout_below="@+id/divider_desco"
+            android:textColor="#3C0897"
+            android:textSize="18sp"
+           />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtvw_titas"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_gray"
+            android:id="@+id/divider_titas"/>
+
+
+        <ImageView
+            android:id="@+id/ic_akash"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/divider_titas"
+            android:background="@drawable/ic_akash"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/txtvw_akash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/ic_titas"
+            android:hint="AKASH DTH"
+            android:textColor="#1F0251"
+            android:layout_below="@+id/divider_titas"
+            android:textSize="18sp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="35dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtvw_akash"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_gray"
+            android:id="@+id/divider_akash"/>
+
+        <ImageView
+            android:id="@+id/ic_link3"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/divider_akash"
+            android:background="@drawable/ic_link3"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:id="@+id/txtvw_link3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/ic_titas"
+            android:hint="LINK3"
+            android:textColor="#1F0251"
+            android:layout_below="@+id/divider_akash"
+            android:textSize="18sp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="35dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

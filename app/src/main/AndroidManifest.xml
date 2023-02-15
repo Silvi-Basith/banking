@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bankmanagement"
+        tools:targetApi="31">
+        <activity
+            android:name=".AkashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TitasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Link3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DescoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyPhoneActivity"
+            android:exported="false"
+            android:parentActivityName=".Bkash" />
+        <activity
+            android:name=".Bkash"
+            android:exported="false"
+            android:parentActivityName=".sourceofwithdraw" />
+        <activity
+            android:name=".sourceofwithdraw"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".DepositActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMoneyOTP"
+            android:exported="false"
+            android:parentActivityName=".CreditCardActivity" />
+        <activity
+            android:name=".CreditCardActivity"
+            android:exported="false"
+            android:parentActivityName=".AddMoneyActivity" />
+        <activity
+            android:name=".TransectionActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".WithdrawActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMoneyActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".DeleteProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".Settings" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".Settings">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UpdateEmailActivity"
+            android:exported="false"
+            android:parentActivityName=".Settings">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".UserProfileActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UploadProfilePicActivity"
+            android:exported="false"
+            android:parentActivityName=".UserProfileActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
